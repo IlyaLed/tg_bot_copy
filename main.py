@@ -23,6 +23,10 @@ dp = Dispatcher()
 async def send_welcome(message: types.Message):
     await message.answer("Привет! Я простой бот. Напиши мне что-нибудь, и я повторю.")
 
+@dp.message(Command("info"))
+async def send_info(message: types.Message):
+    await message.answer("Этот бот для лабы.")
+
 @dp.message(Command("help"))
 async def send_help(message: types.Message):
     await message.answer("Вы ввели команду /help \nВведите текст")
