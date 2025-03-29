@@ -7,6 +7,8 @@ import asyncio
 from dotenv import load_dotenv
 import os
 
+#какое то изменение в коде
+
 load_dotenv()
 
 API_TOKEN = os.getenv("API_TOKEN")
